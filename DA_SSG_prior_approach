@@ -176,7 +176,6 @@ for(ii in 2:BB){
   lat_var <- qnorm(prob_l, mean = inv_coeff[ii-1,], sd = 1)
   
 # ========================== Generating mix_var ================================    
-  
   wav_lat_var <- wd(lat_var, filter.number = number_vm, family = family_choice)
   #sdev <- (mad(accessD.wd(wav_lat_var, level=(nlevelsWT(wav_lat_var)-1)),
                center = 0))
@@ -217,12 +216,10 @@ for(ii in 2:BB){
   coef_wavelet[ii,1] <- accessC.wd(wav_lat_var, level = 0)
   
 # =========================== Generating inv_coeff =============================
-  # inv_coeff[ii,] <- qnorm(alpha_behavior, mean = 0, sd = 1)
   inv_coeff[ii,] <- inverse_coeff(coef_wavelet[ii,], vm = number_vm, 
                                   fc = family_choice)
   
 # ========================== Generating alpha ==================================
-  #alpha[ii,] <- alpha_behavior
   alpha[ii,] <- pnorm(inv_coeff[ii,], 0, 1)[1:data_size]
   
   if(!ii%%n.verbose & verbose)
