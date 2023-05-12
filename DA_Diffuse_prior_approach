@@ -36,10 +36,10 @@ n.verbose <- 1000
 verbose <- TRUE
 
 #Family choice
-family_choice <- "DaubExPhase" #"DaubLeAsymm", "DaubExPhase", "Coiflets"
+family_choice <- "Coiflets" #"DaubLeAsymm", "DaubExPhase", "Coiflets"
 
 #Number of vanishing moments
-number_vm <- 10
+number_vm <- 5
 
 # ==============================================================================
 # =========================== Important Functions ==============================
