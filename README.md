@@ -13,9 +13,9 @@ DA - Data augmentation approach: Uses the data augmentation method by Albert and
 to model the allocation data of the two-component mixture model. We use a DWT matrix as the
 design matrix in the Probit regression. We consider 4 priors to the distribution of the wavelet
 coefficients:
-1 - Diffuse
-2 - Gaussian
-3 - Spike and Slab (Gaussian slab)
-4 - Spike and Slab (Laplace slab)
+1 - Diffuse;
+2 - Gaussian;
+3 - Spike and Slab (Gaussian slab);
+4 - Spike and Slab (Laplace slab).
 
 
