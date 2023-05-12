@@ -89,8 +89,8 @@ inv_coeff <- matrix(nrow=BB,ncol=aux_data_size)
 
 prior_mean1 <- quantile(y, probs = 0.25)
 prior_mean2 <- quantile(y, probs = 0.75)
-prior_variance1 <- 10*var(y)
-prior_variance2 <- 10*var(y)
+prior_variance1 <- var(y)
+prior_variance2 <- var(y)
 prior_alpha_gamma <- 0.01
 prior_beta_gamma <- 0.01
 
