@@ -1,21 +1,11 @@
 # aCGH_application_wavelets
-Using Wavelets and MCMC methods to analyze an aCGH data set
+This project focuses on the application of wavelet analysis and Markov Chain Monte Carlo (MCMC) methods to analyze an array comparative genomic hybridization (aCGH) data set. The goal is to detect aberrations in DNA copy number by utilizing advanced statistical techniques discussed in my dissertation titled "Bayesian estimation of dynamic mixture models by wavelets."
 
-Array comparative genomic hybridization (aCGH) is a technique that, under certain conditions,
-provides intense fluorescence signals which are used for detecting aberrations in DNA copy number.
-We use an aCGH data set to illustrate how the MCMC methods discussed in my dissertation ("Bayesian 
-estimation of dynamic mixture models by wavelets") can be effective in this kind of application:
+Key Methods:
+- Wavelet Regression (WR) Approach: The original aCGH data is transformed into a regression framework, where the regression function represents the dynamic probability to be estimated. This approach leverages wavelet analysis to model and analyze the data effectively.
+- Data Augmentation (DA) Approach: This approach utilizes the data augmentation method proposed by Albert and Chibb (1993) to model the allocation data of the two-component mixture model. A discrete wavelet transform (DWT) matrix is employed as the design matrix in the Probit regression. Four different prior distributions are considered for the wavelet coefficients: a diffuse prior, a Gaussian prior, a spike and slab prior with Gaussian slab, and a spike and slab prior with Laplace slab.
 
-WR - Wavelet regression approach: Consists of transforming the original data into a regression,
-whose regression function is the dynamic probability to be estimated. 
+By applying these methods, the project aims to identify DNA copy number aberrations and gain insights into the underlying genomic variations.
 
-DA - Data augmentation approach: Uses the data augmentation method by Albert and Chibb (1993)
-to model the allocation data of the two-component mixture model. We use a DWT matrix as the
-design matrix in the Probit regression. We consider 4 priors to the distribution of the wavelet
-coefficients:
-1 - Diffuse;
-2 - Gaussian;
-3 - Spike and Slab (Gaussian slab);
-4 - Spike and Slab (Laplace slab).
-
+Overall, this project showcases the effectiveness of wavelet analysis and MCMC methods in analyzing aCGH data. The findings contribute to the field of genomic research, providing valuable insights into DNA copy number alterations and their implications.
 
