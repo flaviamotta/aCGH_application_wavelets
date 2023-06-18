@@ -1,5 +1,5 @@
 # aCGH_application_wavelets
-This project focuses on the application of wavelet analysis and Markov Chain Monte Carlo (MCMC) methods to analyze an array comparative genomic hybridization (aCGH) data set. The goal is to detect aberrations in DNA copy number by utilizing advanced statistical techniques discussed in my dissertation titled "Bayesian estimation of dynamic mixture models by wavelets".
+This project focuses on the application of wavelet analysis and Markov Chain Monte Carlo (MCMC) methods to analyze an array comparative genomic hybridization (aCGH) data set. The goal is to detect aberrations in DNA copy number by utilizing advanced statistical techniques discussed in my thesis titled "Bayesian estimation of dynamic mixture models by wavelets".
 
 Key Methods:
 - Wavelet Regression (WR) Approach: The original aCGH data is transformed into a regression framework, where the regression function represents the dynamic probability to be estimated. This approach leverages wavelet analysis to model and analyze the data effectively.
